@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import { restaurants } from "./data.js";
+import { restaurants } from "../../forms/src/data.js";
 const app = express();
 const port = 3000;
 app.use(cors());

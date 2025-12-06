@@ -1,5 +1,13 @@
 import { useState } from "react";
 function AddRestaurant({ updateRestaurants }) {
+  // Lab deliverable 2
+  const [formData, setFormData] = useState({
+    name: "",
+    address: "",
+    phone: "",
+    cuisine: "",
+    rating: ""
+  });
   return (
     <form>
       <div>

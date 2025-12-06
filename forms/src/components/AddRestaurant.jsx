@@ -8,6 +8,14 @@ function AddRestaurant({ updateRestaurants }) {
     cuisine: "",
     rating: ""
   });
+
+  // Lab deliverable 3
+  const handleChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setFormData({...formData, [name]: value });
+  };
+
   return (
     <form>
       <div>
